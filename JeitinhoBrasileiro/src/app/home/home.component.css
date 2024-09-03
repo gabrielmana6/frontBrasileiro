@@ -1,0 +1,45 @@
+/* Resetando margens e paddings globais */
+* {
+    margin: -10;
+    padding: -10;
+    box-sizing: border-box;
+  }
+  
+  /* Garantindo que o html e body ocupem a altura total */
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Configurando o layout principal do body como flexbox */
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header fixo no topo */
+  app-header {
+    flex-shrink: 0;
+    background-color: #4e3d96; /* Cor de fundo do header */
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Footer fixo no rodapé */
+  app-footer {
+    flex-shrink: 0;
+    background-color: #4e3d96; /* Cor de fundo do footer */
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    flex-grow: 1;
+    padding: 0;  /* Remove o padding lateral e superior/inferior */
+    background-color: #f8f9fa; /* Cor de fundo do conteúdo */
+    width: 100%;
+    margin: 0;
+  }
