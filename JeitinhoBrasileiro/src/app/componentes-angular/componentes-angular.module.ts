@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -23,7 +24,8 @@ import { NgModule } from '@angular/core';
     MatDialogModule,
     MatMenuModule,
     MatOptionModule, 
-    MatError
+    MatError,
+    FormsModule
   ],
   exports: [
     CommonModule,
@@ -37,7 +39,8 @@ import { NgModule } from '@angular/core';
     MatTableModule,
     MatOptionModule,
     MatSelectModule,
-    MatError
+    MatError,
+    FormsModule
   ]
 })
 export class ComponentesAngularModule { }
